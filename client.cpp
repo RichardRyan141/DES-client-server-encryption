@@ -579,7 +579,7 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
-	cout << "Connected to 10.6.1.1:" << PORT << endl;
+	cout << "Connected to 10.6.1.3:" << PORT << endl;
 
 	while(1)
 	{
