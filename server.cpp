@@ -595,7 +595,7 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
-	cout << "Connection accepted from 10.6.1.3" << endl;
+	cout << "Connection accepted from 10.6.1.2" << endl;
 
 	ssize_t received_bytes;
 	while ((received_bytes = recv(client_socket, buffer, sizeof(buffer), 0)) > 0)
