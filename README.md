@@ -10,3 +10,5 @@ Hal yang bisa dicustom
    Dapat diubah di line 592 pada client.cpp ```key = "0F1E2D3C4B5A6978";```
    Dan juga harus diubah di line 607 pada server.cpp ```key = "0F1E2D3C4B5A6978";```
    Key harus berupa 16 karakter yang hanya mengandung 0-9, a-f atau A-F
+3) Host to Host
+   Apabila ingin diubah menjadi komunikasi host to host, maka dapat di uncomment baris 651-653 pada server.cpp kemudian mencomment baris 633-649
