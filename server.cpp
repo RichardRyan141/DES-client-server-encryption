@@ -627,7 +627,7 @@ int main()
 		
 		decryptedText = hex_to_string(hex_decryptedText);
 		cout << "Decrypted Text     : " << decryptedText << "\n";
-		cout << "PadByte            : " << padByte << "\n";
+		//cout << "PadByte            : " << padByte << "\n";
 		//cout << "Decrypted Text length : " << decryptedText.length() << "\n";
 
 		response = "Client message is ";
