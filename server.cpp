@@ -556,7 +556,7 @@ int main()
 {
 	string plainText, hex_plainText, key, cipherText, hex_decryptedText, decryptedText, message, response, hex_response, client_message, str_len, temp_str;
 	int i, padByte, n, len;
-	char char_plainText[MAX_PLAIN_LENGTH], char_key[MAX_KEY_LENGTH], final_character;
+	char char_plainText[MAX_PLAIN_LENGTH], char_key[MAX_KEY_LENGTH], final_character, char_response[MAX_PLAIN_LENGTH];
 	
 	int server_socket, client_socket;
 	struct sockaddr_in server_address, client_address;
@@ -628,7 +628,7 @@ int main()
 		decryptedText = hex_to_string(hex_decryptedText);
 		cout << "Decrypted Text     : " << decryptedText << "\n";
 		cout << "PadByte            : " << padByte << "\n";
-		cout << "Decrypted Text length : " << decryptedText.length() << "\n";
+		//cout << "Decrypted Text length : " << decryptedText.length() << "\n";
 
 		response = "Client message is ";
 		len = decryptedText.length();
@@ -648,6 +648,10 @@ int main()
 		response += " characters long";
 		cout << "Response           : " << response << "\n";
 
+		/*cout << "Response            : ";
+		cin.getline (char_response, MAX_PLAIN_LENGTH);
+		response = char_response;*/
+		
 		hex_response = string_to_hex(response);
                 cout << "Hex Response       : " << hex_response << "\n";
 		padByte = padMessage(hex_response);
